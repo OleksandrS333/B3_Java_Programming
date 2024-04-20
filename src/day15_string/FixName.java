@@ -26,6 +26,9 @@ public class FixName {
 
         System.out.println(fixedFirstName + " " + fixedLastName);
 
+        // WITH careAt()
+        /*String fixedFirstName =( ""+firstName.charAt(0) ).toUpperCase()  +( ""+firstName.charAt(1) ).toLowerCase() + (""+firstName.charAt(2)).toLowerCase();  // TOM-- OM, MICKY -- > ICKY
+        String fixedLastName = ("" + lastName.charAt(0) ).toUpperCase()  + ("" + lastName.charAt(1) ).toLowerCase() + ("" + lastName.charAt(2) ).toLowerCase() + ("" + lastName.charAt(3) ).toLowerCase() + ("" + lastName.charAt(4) ).toLowerCase();*/
 
     }
 }
