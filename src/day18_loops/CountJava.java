@@ -10,14 +10,14 @@ package day18_loops;
 public class CountJava {
     public static void main(String[] args) {
 
-        String str = "java is a java language java";
+        String str = "hi asd asd ahi asd h";
         int countJava = 0;
 
-        for (int i = 0; i <= str.length() - 4; i++) {
+        for (int i = 0; i <= str.length() - 2; i++) {
 
-            String everyFour = str.substring(i, i+4);
+            String everyFour = str.substring(i, i+2);
 
-            if (everyFour.equals("java")){
+            if (everyFour.equals("hi")){
                 countJava++;
             }
 
