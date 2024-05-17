@@ -1,6 +1,9 @@
 package Interview;
 
+import my_utilities.ArrayUtil;
 import my_utilities.StringUtil;
+
+import java.util.Arrays;
 
 public class FixFormat {
     public static void main(String[] args) {
