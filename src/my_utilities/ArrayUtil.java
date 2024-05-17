@@ -108,6 +108,21 @@ public class ArrayUtil {
 
     //TODO: create a reusable method that take 2 int array and return one array combined
 
+    /**
+     * This method takes 2 int array and return one array combined
+     * @param arr and we are going to put together with another parameter
+     * @param arr2 we are going to put together with first one
+     * @return newArr that already has all values first(from the first array and then from the second)
+     */
+    public static int [] combinedArrays (int []arr, int[]arr2){
+        int [] newArr = Arrays.copyOf(arr, arr.length +arr2.length);
+        for (int i = 0; i <newArr.length; i++) {
+            if (i >= arr.length){
+                newArr[i] = arr2[i - arr.length];
+            }
+        }
+        return newArr;
+    }
 
     /**
      * This method finds the first matched element's index of int array

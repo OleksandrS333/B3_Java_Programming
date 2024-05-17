@@ -1,5 +1,7 @@
 package day26_methods;
 
+import my_utilities.ArrayUtil;
+
 import java.util.Arrays;
 
 public class AddElemInArr {
@@ -15,7 +17,10 @@ public class AddElemInArr {
 
         System.out.println(  Arrays.toString(addElemInArr(b, 943))   );
         System.out.println(  Arrays.toString(addElemInArr2(b, 943))   );
-
+        int [] z = {1,2,3};
+        int [] v = {6, 7, 8, 8};
+        int [] p = ArrayUtil.combinedArrays(z,v);
+        System.out.println(Arrays.toString(p));
 
     }
 
