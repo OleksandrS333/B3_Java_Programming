@@ -19,7 +19,7 @@ public class AddElemInArr {
         System.out.println(  Arrays.toString(addElemInArr2(b, 943))   );
         int [] z = {1,2,3};
         int [] v = {6, 7, 8, 8};
-        int [] p = ArrayUtil.combinedArrays(z,v);
+        int [] p = ArrayUtil.addElemInArr(z,v);
         System.out.println(Arrays.toString(p));
 
     }

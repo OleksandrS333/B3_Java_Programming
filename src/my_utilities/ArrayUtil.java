@@ -109,17 +109,20 @@ public class ArrayUtil {
     //TODO: create a reusable method that take 2 int array and return one array combined
 
     /**
-     * This method takes 2 int array and return one array combined
-     * @param arr and we are going to put together with another parameter
+     * This method takes 2 int arrays and return one array combined
+     * @param arr1 and we are going to put together with another parameter
      * @param arr2 we are going to put together with first one
      * @return newArr that already has all values first(from the first array and then from the second)
      */
-    public static int [] combinedArrays (int []arr, int[]arr2){
-        int [] newArr = Arrays.copyOf(arr, arr.length +arr2.length);
+    public static int [] addElemInArr (int []arr1, int[]arr2){
+        int [] newArr = Arrays.copyOf(arr1, arr1.length +arr2.length);
         for (int i = 0; i <newArr.length; i++) {
-            if (i >= arr.length){
-                newArr[i] = arr2[i - arr.length];
+            if (i >= arr1.length){
+                newArr[i] = arr2[i - arr1.length]; // or
             }
+//            for (int j = arr1.length; j < newArr.length; j++) {  // or this way
+//                newArr[i] = arr2[i - arr1.length];
+//            }
         }
         return newArr;
     }
