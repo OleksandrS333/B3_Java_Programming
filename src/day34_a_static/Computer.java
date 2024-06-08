@@ -23,6 +23,19 @@ public class Computer {
     static boolean hasBattery;
     static boolean hasMemory;
 
+public Computer () {
+    System.out.println(1);
+}
+
+    public Computer (double price, String brand, String color) {
+    this();
+        System.out.println("Running constructor");
+        this.price = price;  // comp1.price = 500.00;
+        this.brand = brand;
+        this.color = color;
+
+    }
+
     static {
         System.out.println("Running static block");
         hasScreen = false;
@@ -30,15 +43,6 @@ public class Computer {
         hasMemory = true;
         // price = 50; -- > static accepts only static
     }
-
-
-    public Computer (double price, String brand, String color) {
-        System.out.println("Running constructor");
-        this.price = price;  // comp1.price = 500.00;
-        this.brand = brand;
-        this.color = color;
-    }
-
 
 
 
