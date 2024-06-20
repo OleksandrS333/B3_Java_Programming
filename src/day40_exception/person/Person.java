@@ -9,7 +9,7 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) throws Exception{
         if (name == null || name.isEmpty()){
             //System.out.println("Cannot assing");
             throw new Exception("Name cannot be empty");
