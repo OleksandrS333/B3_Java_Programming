@@ -79,6 +79,9 @@ public class Classroom {
             System.out.println("Value: " + each.getValue());
         }
 
+        for (int i = 0; i <map.size(); i++) {
+            System.out.println(map.get(i));
+        }
 
     }
 }
